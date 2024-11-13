@@ -13,12 +13,12 @@ export default function AppRoutes() {
     <Provider store={store}>
       <LoginProvider>
         <Routes>
-          <Route path="login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
 
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Homepage />} />
-            <Route path="pokemon" element={<Pokemon />} />
-            <Route path="pokemon/:id" element={<PokemonDetail />} />
+            <Route path="/pokemon" element={<Pokemon />} />
+            <Route path="/pokemon/:id" element={<PokemonDetail />} />
           </Route>
         </Routes>
       </LoginProvider>
