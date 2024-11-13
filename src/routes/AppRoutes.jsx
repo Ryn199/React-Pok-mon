@@ -16,7 +16,7 @@ export default function AppRoutes() {
           <Route path="/login" element={<LoginPage />} />
 
           <Route path="/" element={<MainLayout />}>
-            <Route index element={<Homepage />} />
+            <Route index element={<Pokemon />} />
             <Route path="/pokemon" element={<Pokemon />} />
             <Route path="/pokemon/:id" element={<PokemonDetail />} />
           </Route>
